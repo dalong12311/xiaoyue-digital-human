@@ -1,0 +1,11 @@
+{
+  "name": "xiaoyue-frontend",
+  "version": "1.0.0",
+  "description": "Xiao Yue Digital Human Frontend Interface",
+  "scripts": {
+    "start": "serve -s dist",
+    "build": "echo 'Build completed'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
