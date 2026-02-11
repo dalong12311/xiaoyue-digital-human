@@ -2,10 +2,14 @@
   "github": {
     "silent": true
   },
-  "buildCommand": "echo 'Build completed'",
-  "outputDirectory": ".",
-  "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/:path*" }
+  "version": 2,
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "api/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ],
   "headers": [
     {
@@ -16,10 +20,5 @@
         { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
       ]
     }
-  ],
-  "functions": {
-    "api/*.js": {
-      "maxDuration": 30
-    }
-  }
+  ]
 }
