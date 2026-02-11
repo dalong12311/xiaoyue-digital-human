@@ -3,5 +3,5 @@
     "silent": true
   },
   "buildCommand": "echo 'No build needed'",
-  "outputDirectory": "."
+  "outputDirectory": "public"
 }
