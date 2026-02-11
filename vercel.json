@@ -1,7 +1,5 @@
 {
   "github": {
     "silent": true
-  },
-  "buildCommand": "echo 'Build completed'",
-  "outputDirectory": "public"
+  }
 }
