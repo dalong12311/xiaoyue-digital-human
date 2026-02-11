@@ -3,5 +3,5 @@
     "silent": true
   },
   "buildCommand": "echo 'Build completed'",
-  "outputDirectory": "."
+  "outputDirectory": "public"
 }
