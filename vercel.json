@@ -2,8 +2,6 @@
   "github": {
     "silent": true
   },
-  "buildCommand": "echo 'No build needed'",
-  "outputDirectory": "public",
   "rewrites": [
     { "source": "/api/:path*", "destination": "/api/:path*" }
   ],
@@ -16,5 +14,10 @@
         { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 30
+    }
+  }
 }
